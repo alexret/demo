@@ -1,0 +1,18 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+	<form th:action="@{/imc}" method="post">
+		<p> Introduce tu peso:</p> 
+		<p> <input type="text" name="peso" required="true"></p>
+		<p> Introduce tu altura: </p>
+		<p> <input type="text" name="altura" required="true"></p>
+		<p> Introduce tu edad: </p>
+		<p> <input type="text" name="edad" required="true"></p>
+		<p> Introduce tu sexo: </p>
+		<p> <input type="text" name="hm" required="true"></p>
+		<input type="submit" value="Enviar">
+		
+		<p th:text=${resultado}></p>
+	</form>
+		
+</body>
+</html>

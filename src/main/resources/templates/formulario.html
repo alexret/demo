@@ -1,0 +1,46 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+	<form th:action="@{/formulario}" method="post">
+		<p> Nombre: <input type="text" name="nombre" required="true"></p>
+		<p> Primer apellido: <input type="text" name="apellido1" required="true"> </p>
+		<p> Segundo apellido: <input type="text" name="apellido2" required="true"> </p>
+		<p> Email: <input type="email" name="email"> </p>
+		<p> Fecha de nacimiento: <input type="date" name="nacido"> </p>
+		<p> Contrase&ntilde;a <input type="password" name="contraseña" required="true"> </p>
+		<p> Sexo </p>
+		<input type="radio"  name="genero" value="hombre"> Hombre </br>
+		<input type="radio" name="genero" value="mujer"> Mujer
+		<p> Direcci&oacute;n: <input type="text" name="direccion" required="true"></p>
+		
+		<hr>
+		<p>Nivel de estudios </p>
+		<input type="checkbox"  name="escolar" value="escolar">
+			<label for="escolar">Certificado escolar</label><br>
+		<input type="checkbox" name="eso" value="eso">
+			<label for="eso">Graduado en E.S.O</label><br>
+		<input type="checkbox"  name="bach" value="bach">
+			<label for="bach">Bachillerato - Formaci&oacute;n profesional</label><br>
+		<input type="checkbox" name="diplo" value="diplo">
+			<label for="diplo">Diplomado</label><br>
+		<input type="checkbox" name="licen" value="licen">
+			<label for="licen">Licenciado o Doctorado</label><br>
+			
+		<p>Recibir art&iacute;culos sobre los siguientes temas </p>
+		<input type="checkbox"  name="musica" value="musica">
+			<label for="musica">M&uacute;sica</label><br>
+		<input type="checkbox" name="deportes" value="deportes">
+			<label for="deportes">Deportes</label><br>
+		<input type="checkbox"  name="cine" value="cine">
+			<label for="cine"> Cine </label><br>
+		<input type="checkbox" name="libros" value="libros">
+			<label for="libros"> Libros </label><br>
+		<input type="checkbox" name="ciencia" value="ciencia">
+			<label for="licen"> Ciencia</label><br>	
+			
+		<hr>
+		<p> Enviar datos del formulario </p>
+		<p> &iquest;Est&aacute;s seguro de que los datos son correctos? </p>
+		 <input type="submit" value="Enviar"> 	
+	</form>
+</body>
+</html>
